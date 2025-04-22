@@ -218,6 +218,56 @@
             font-weight: 500;
         }
         
+        /* Featured Projects */
+        .featured-project {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .featured-project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .featured-project .card-body {
+            padding: 30px;
+        }
+        
+        .featured-project h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+        
+        .featured-project p {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+        
+        .featured-project .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .featured-project .tech-tag {
+            background-color: rgba(131, 56, 236, 0.1);
+            color: var(--secondary-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .featured-project .btn {
+            margin-right: 15px;
+        }
+        
         /* Footer */
         footer {
             background-color: var(--dark-color);
@@ -272,7 +322,7 @@
                 <div class="about-content">
                     <h3>Hello, I'm Parvatam Sai Roshan</h3>
                     <p>I'm a passionate software developer and machine learning enthusiast with knowledge in building innovative solutions that solve real-world problems. My journey in technology began with a curiosity about how things work, which eventually led me to pursue a career in software development and artificial intelligence.</p>
-                    <p>With a foundation in both theoretical concepts and practical applications, I specialize in developing applications that leverage the power of data and machine learning to create meaningful impact and also buidling apps for common everyday problems. I'm constantly learning and adapting to new technologies rapidly.</p>
+                    <p>With a foundation in both theoretical concepts and practical applications, I specialize in developing applications that leverage the power of data and machine learning to create meaningful impact and also building apps for common everyday problems. I'm constantly learning and adapting to new technologies rapidly.</p>
                     <p>Interested in and wanting to engage in customer interactions and in search of business analyst or sales and marketing roles primarily.</p>
                     <div class="skills-list">
                         <span class="skill-tag">Python</span>
@@ -283,23 +333,98 @@
                         <span class="skill-tag">Software Testing</span>
                         <span class="skill-tag">Project Management</span>
                         <span class="skill-tag">Requirements Engineering</span>
+                        <span class="skill-tag">Cloud Computing</span>
+                        <span class="skill-tag">IoT</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Projects Section -->
-    <section id="projects" style="background-color: #f0f4f8;">
+    <!-- Featured Projects Section -->
+    <section id="featured-projects" style="background-color: #f0f4f8;">
         <div class="container">
-            <h2>My Projects</h2>
+            <h2>Featured Projects</h2>
+            
+            <!-- Temperature Prediction Project -->
+            <div class="featured-project">
+                <div class="card-body">
+                    <h3>Temperature Prediction Analysis Using Deep Learning</h3>
+                    <p>A cloud computing project that leverages deep learning models to analyze and predict temperature patterns. This solution provides accurate temperature forecasting by processing historical weather data and identifying patterns through neural networks.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">Cloud Computing</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">Neural Networks</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1X4U6qaqnEPGZ0BdQJdvHZNkq5CPB3H_t/view?usp=share_link" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+            
+            <!-- Smart Solar Panel Project -->
+            <div class="featured-project">
+                <div class="card-body">
+                    <h3>Smart Solar Panel with Flutter Integration</h3>
+                    <p>An innovative IoT project that combines solar energy technology with mobile application control. This smart solar panel system allows users to monitor energy production, panel efficiency, and system status in real-time through a Flutter-based mobile application interface.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Renewable Energy</span>
+                        <span class="tech-tag">Mobile Development</span>
+                        <span class="tech-tag">Embedded Systems</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1SOnWBhma51qHltARQqS2AzSLZS207z8S/view?usp=share_link" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+            
+            <!-- AI Cricket Project -->
+            <div class="featured-project">
+                <div class="card-body">
+                    <h3>AI-Based Cricket Shot Classification</h3>
+                    <p>Machine learning project for classifying cricket shots using computer vision and artificial intelligence techniques. This system can identify and categorize different batting shots in cricket videos, providing valuable insights for players and coaches.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AI</span>
+                        <span class="tech-tag">Sports Analytics</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1FZDPkG5etS-K8760ScoYeFikOP4ncBbo/view?usp=sharing" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Other Projects</h2>
             <div class="card-container">
+                <!-- Flutter HCI Project -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3>FLUTTER Based HCI Project</h3>
+                        <p>Human-Computer Interaction project developed using Flutter framework, focusing on user experience and interface design.</p>
+                        <a href="https://drive.google.com/file/d/1SSnHEdRM-uXiy2vdBH_5tXLreUoudoql/view?usp=share_link" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+                
                 <!-- Java Project -->
                 <div class="card">
                     <div class="card-body">
                         <h3>Java Project</h3>
                         <p>A comprehensive Java project demonstrating object-oriented programming concepts and application development.</p>
                         <a href="https://drive.google.com/file/d/1N5Fdi39jvVUl7OUmBrSYCrU1hxB4wzzq/view?usp=sharing" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Software Testing Project -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Software Testing Project</h3>
+                        <p>Comprehensive software testing project showcasing various testing methodologies, frameworks, and best practices.</p>
+                        <a href="https://drive.google.com/file/d/1Rtoy1b9gD_d1fT3iqGIxx6jdZFDAgt8f/view?usp=sharing" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
                 
@@ -321,39 +446,12 @@
                     </div>
                 </div>
                 
-                <!-- Testing Project -->
-                <div class="card">
-                    <div class="card-body">
-                        <h3>Software Testing Project</h3>
-                        <p>Comprehensive software testing project showcasing various testing methodologies, frameworks, and best practices.</p>
-                        <a href="https://drive.google.com/file/d/1Rtoy1b9gDd1fT3iqGIxx6jdZFDAgt8f/view?usp=sharing" class="btn" target="_blank">View Project</a>
-                    </div>
-                </div>
-                
                 <!-- SAD Project -->
                 <div class="card">
                     <div class="card-body">
                         <h3>System Analysis & Design</h3>
                         <p>Project focusing on software system analysis and design principles, including UML diagrams and design patterns.</p>
-                        <a href="https://drive.google.com/file/d/1Cb4EOyfb72yLhKlGl7i5-eu3KURUltP/view?usp=sharing" class="btn" target="_blank">View Project</a>
-                    </div>
-                </div>
-                
-                <!-- Flutter HCI Project -->
-                <div class="card">
-                    <div class="card-body">
-                        <h3>FLUTTER Based HCI Project</h3>
-                        <p>Human-Computer Interaction project developed using Flutter framework, focusing on user experience and interface design.</p>
-                        <a href="https://drive.google.com/file/d/1SSnHEdRM-uXiy2vdBH5tXLreUoudoql/view?usp=sharing" class="btn" target="_blank">View Project</a>
-                    </div>
-                </div>
-                
-                <!-- AI Cricket Project -->
-                <div class="card">
-                    <div class="card-body">
-                        <h3>AI-Based Cricket Shot Classification</h3>
-                        <p>Machine learning project for classifying cricket shots using computer vision and artificial intelligence techniques.</p>
-                        <a href="https://drive.google.com/file/d/1FZDPkG5etS-K8760ScoYeFikOP4ncBbo/view?usp=sharing" class="btn" target="_blank">View Project</a>
+                        <a href="https://drive.google.com/file/d/1Cb4EOyfb72yLhKlGl7i5-eu3KURUltP_/view?usp=sharing" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
                 
@@ -362,7 +460,7 @@
                     <div class="card-body">
                         <h3>LSM Project</h3>
                         <p>Logistics and Supply Management project showcasing efficient supply chain management and optimization techniques.</p>
-                        <a href="https://drive.google.com/file/d/1JLpCv8pWoE97KPrMM1-XmmPe57WiPtx/view?usp=sharing" class="btn" target="_blank">View Project</a>
+                        <a href="https://drive.google.com/file/d/1JLpCv8pWoE97KPrMM1-XmmPe57WiPt_x/view?usp=sharing" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
                 
@@ -371,7 +469,7 @@
                     <div class="card-body">
                         <h3>SPM Project</h3>
                         <p>Software Project Management project demonstrating planning, scheduling, and resource allocation in software development.</p>
-                        <a href="https://drive.google.com/file/d/1YoRF0NJiOb4H8W7G9gaBFGQyO3iziA5/view?usp=sharing" class="btn" target="_blank">View Project</a>
+                        <a href="https://drive.google.com/file/d/1YoRF0NJiOb4H8W7G9gaBFGQyO3iziA5_/view?usp=sharing" class="btn" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
@@ -379,7 +477,7 @@
     </section>
     
     <!-- Certifications & Badges Section -->
-    <section id="badges">
+    <section id="badges" style="background-color: #f0f4f8;">
         <div class="container">
             <h2>Certifications & Badges</h2>
             <div class="badge-container">
